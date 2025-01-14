@@ -213,7 +213,7 @@ void AcDimmer::write_state(float state) {
   this->store_.value = new_value;
 }
 void AcDimmer::dump_config() {
-  ESP_LOGCONFIG(TAG, "AcDimmer:");
+  ESP_LOGCONFIG(TAG, "AcDimmer_custom:");
   LOG_PIN("  Output Pin: ", this->gate_pin_);
   LOG_PIN("  Zero-Cross Pin: ", this->zero_cross_pin_);
   ESP_LOGCONFIG(TAG, "   Min Power: %.1f%%", this->store_.min_power / 10.0f);
